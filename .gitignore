@@ -3,3 +3,6 @@ k8s/web-app
 k8s/service-center
 k8s/frontend
 vendor/
+sample-configs/routing/calculator-0.0.1/calculator
+sample-configs/routing/calculator-0.0.2/calculator
+sample-configs/routing/web-app/web-app

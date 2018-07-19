@@ -1,0 +1,26 @@
+routeRule:
+  Calculator:
+    - precedence: 1
+      match:
+        source: web-app
+      route:
+        - weight: 90
+          tags:
+            version: 0.0.1
+            app: calculator
+    - precedence: 1
+      match:
+        source: web-app
+      route:
+        - weight: 10
+          tags:
+            version: 0.0.2
+            app: calculator
+sourceTemplate:
+  myroute:
+    source: web-app
+    sourceTags:
+      ver: version
+    headers:
+      cookie:
+        regex: "user.*lance"

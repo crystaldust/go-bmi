@@ -20,6 +20,7 @@ func (c *CalculateBmi) URLPatterns() []rf.Route {
 }
 
 func (c *CalculateBmi) Calculate(ctx *rf.Context) {
+	fmt.Println("[JUZHEN DEBUG]: ", "Calculate method called!")
 
 	var height, weight, bmi float64
 	var err error
